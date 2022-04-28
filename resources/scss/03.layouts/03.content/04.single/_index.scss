@@ -1,13 +1,18 @@
 .single {
     .cover {
         background: url( '../../../../../public/images/custom-image.jpg' );
-        padding: 9rem 0;
+        padding: 8rem 0;
     
         .entry-header {
             color: color( white );
             margin: 0 auto;
             max-width: 700px;
-            text-align: center;
+            text-align: left;
+
+            .entry-date {
+                font-family: font-family( 'date' );
+                font-size: 2.125rem;;
+            }
     
             .entry-title {
                 font-size: 3.125rem;

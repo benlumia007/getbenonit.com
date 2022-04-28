@@ -22,6 +22,7 @@
     </header>
     <div class="cover block-group">
         <header class="entry-header">
+            <span class="entry-date"><?= $single->date(); ?></span>
             <h1 class="entry-title"><?= $single->title() ?></h1>
         </header>
     </div>

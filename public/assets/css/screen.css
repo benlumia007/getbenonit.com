@@ -145,13 +145,17 @@ body {
 
 .single .cover {
   background: url("../../../../../public/images/custom-image.jpg");
-  padding: 9rem 0;
+  padding: 8rem 0;
 }
 .single .cover .entry-header {
   color: #ffffff;
   margin: 0 auto;
   max-width: 700px;
-  text-align: center;
+  text-align: left;
+}
+.single .cover .entry-header .entry-date {
+  font-family: var(--font-family-date, "Tangerine", cursive);
+  font-size: 2.125rem;
 }
 .single .cover .entry-header .entry-title {
   font-size: 3.125rem;
@@ -182,8 +186,9 @@ body {
   border: 0.063rem solid #cccccc;
   padding: 1.125rem;
 }
-.home .content-area .single .entry-header {
-  text-align: center;
+.home .content-area .single .entry-date {
+  font-family: var(--font-family-date, "Tangerine", cursive);
+  font-size: 2.125rem;
 }
 .home .content-area .single .entry-header .entry-title {
   margin: 0;
@@ -200,9 +205,6 @@ body {
 }
 .single .content-area .single .heading-permalink {
   display: none;
-}
-.single .content-area .single .entry-header {
-  text-align: center;
 }
 .single .content-area .single .entry-header .entry-title {
   margin: 0;
