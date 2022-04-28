@@ -1,0 +1,43 @@
+name: getbenonit.com
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: step one
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          
+      - name: step two
+        uses: actions/checkout@v2
+        with:
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          submodules: 'recursive'
+
+      - name: step three
+        run: composer install
+
+      - name: step four
+        run: npm install
+
+      - name: step five
+        run: npm run build
+
+      - name: step six
+        run: ls -la getbenonit
+
+      - name: step seven
+        uses: Creepios/sftp-action@v1.0.3
+        with:
+          host: 'vps12591.dreamhostps.com'
+          port: 22
+          username: 'dh_xir6ud'
+          password: '#17T793t448nx97wu'
+          localPath: './getbenonit'
+          remotePath: '/home/dh_xir6ud/getbenonit.com/'
