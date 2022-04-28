@@ -19,7 +19,7 @@ return [
 	// should be the content type name/type (e.g., `post`) set in the
 	// `/config/content.php` configuration file.  Leave empty to show the
 	// normal homepage.
-	'home_alias' => '',
+	'home_alias' => 'posts',
 
 	// Register service providers.
 	'providers' => [

@@ -1,0 +1,9 @@
+.site-content,
+.right-sidebar {
+    &:before,
+    &:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+}

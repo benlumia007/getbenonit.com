@@ -1,7 +1,6 @@
 @media screen and ( min-width: 1025px ) {
 	.site-header {
-		background: #fcfcfc;
-		border-bottom: 0.125rem solid #f3f3f3;
+		background: color( black );
 	
 		.branding-navigation {
 			display: grid;
@@ -22,12 +21,13 @@
 	
 					a {
 						border-bottom: none;
-						color: color( black );
+						color: color( white );
 						text-decoration: none;
 					}
 				}
 	
 				.site-description {
+                    color: color( white );
 					float: left;
 					padding: 1.125rem;
 				}

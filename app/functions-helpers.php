@@ -14,7 +14,7 @@ if ( ! function_exists( 'mix' ) ) {
     function mix( $path ) {
 
         // Get the Laravel Mix manifest.
-        $manifest = \Blush\App::resolve( 'mix' );
+        $manifest = app( 'mix' );
     
         // Make sure to trim any slashes from the front of the path.
         $path = '/' . ltrim( $path, '/' );
@@ -25,4 +25,27 @@ if ( ! function_exists( 'mix' ) ) {
     
         return public_uri( $path );
     }
+}
+
+function primary_menu() { ?>
+    <nav id="primary" class="menu-primary">
+    <button class="menu-toggle"> <?= e( 'Menu' ); ?></button>
+    <ul class="menu-items">
+        <?php 
+            $primaryMenu = config( 'custom.primary' );
+            foreach ($primaryMenu as $primary ) : ?>
+                <li class="menu-item"><a href="<?= $primary['link']; ?>"><?= $primary[ 'title' ]; ?></a></li>
+            <?php endforeach; ?>
+    </ul>
+</nav>
+<?php }
+
+function body_class() {
+    $path = Blush\App::resolve( 'router' )->path();
+
+    if ( $path == '/' ) :
+        return 'home';
+    else :
+        return 'single';
+    endif;
 }
