@@ -1,47 +1,17 @@
-.home {
-    .cover {
-        background: url( '../../../../../public/images/custom-image.jpg' );
-        padding: 4.4rem 0;
-    
-        .entry-header {
-            color: color( white );
-            margin: 0 auto;
-            max-width: 640px;
-            text-align: center;
-    
-            .entry-title {
-                font-size: 3.125rem;
-                margin: 0;
-                padding: 0;
-            }
-    
-            .entry-description {
-                line-height: 1.8rem;
-            }
-        }
-    }
+.site-content {
+    box-sizing: border-box;
+    margin: 1.125rem auto;
+    max-width: 73.125rem;
 }
 
-.single {
-    .cover {
-        background: url( '../../../../../public/images/custom-image.jpg' );
-        padding: 9rem 0;
-    
-        .entry-header {
-            color: color( white );
-            margin: 0 auto;
-            max-width: 640px;
-            text-align: center;
-    
-            .entry-title {
-                font-size: 3.125rem;
-                margin: 0;
-                padding: 0;
-            }
-    
-            .entry-description {
-                line-height: 1.8rem;
-            }
-        }
+.right-sidebar {
+    .content-area {
+        float: left;
+        width: 68.376068376068376%;
+    }
+
+    .widget-area {
+        float: right;
+        width: 30.085470085470085%;
     }
 }

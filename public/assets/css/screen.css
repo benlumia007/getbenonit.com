@@ -95,6 +95,21 @@ body {
     padding: 1.125rem;
   }
 }
+.site-content {
+  box-sizing: border-box;
+  margin: 1.125rem auto;
+  max-width: 73.125rem;
+}
+
+.right-sidebar .content-area {
+  float: left;
+  width: 68.3760683761%;
+}
+.right-sidebar .widget-area {
+  float: right;
+  width: 30.0854700855%;
+}
+
 .home .cover {
   background: url("../../../../../public/images/custom-image.jpg");
   padding: 4.4rem 0;
@@ -145,6 +160,22 @@ body {
   font-style: italic;
 }
 
+.home .content-area {
+  line-height: 1.8rem;
+}
+.home .content-area .single {
+  background: #ffffff;
+  border: 0.063rem solid #cccccc;
+  padding: 1.125rem;
+}
+.home .content-area .single .entry-header {
+  text-align: center;
+}
+.home .content-area .single .entry-header .entry-title {
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (min-width: 1025px) {
   .menu-primary {
     background: transparent;
@@ -172,4 +203,13 @@ body {
     border-bottom: 0.125rem solid #000000;
     color: #000000;
   }
+}
+.home .widget-area .widget {
+  background: #ffffff;
+  border: 0.063rem solid #cccccc;
+  padding: 1.125rem;
+}
+.home .widget-area .widget .widget-title {
+  margin: 0;
+  padding: 0;
 }

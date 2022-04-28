@@ -1,0 +1,23 @@
+.home {
+    .cover {
+        background: url( '../../../../../public/images/custom-image.jpg' );
+        padding: 4.4rem 0;
+    
+        .entry-header {
+            color: color( white );
+            margin: 0 auto;
+            max-width: 640px;
+            text-align: center;
+    
+            .entry-title {
+                font-size: 3.125rem;
+                margin: 0;
+                padding: 0;
+            }
+    
+            .entry-description {
+                line-height: 1.8rem;
+            }
+        }
+    }
+}

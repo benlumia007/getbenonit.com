@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Merriweather:wght@400;700&family=Tangerine&display=swap" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
-<body class="<?= body_class(); ?>">
+<body class="single">
 <section id="container" class="site-container">
     <header id="masthead" class="site-header">
         <div class="branding-navigation">
@@ -23,7 +23,6 @@
     <div class="cover block-group">
         <header class="entry-header">
             <h1 class="entry-title"><?= $single->title() ?></h1>
-            <span class="entry-description"><?= $single->content(); ?></span>
         </header>
     </div>
     
