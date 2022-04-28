@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Merriweather:wght@400;700&family=Tangerine&display=swap" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
-<body class="home">
+<body class="page">
 <section id="container" class="site-container">
     <header id="masthead" class="site-header">
         <div class="branding-navigation">
@@ -22,8 +22,8 @@
     </header>
     <div class="cover block-group">
         <header class="entry-header">
+            <span class="entry-date"><?= $single->date(); ?></span>
             <h1 class="entry-title"><?= $single->title() ?></h1>
-            <span class="entry-description"><?= $single->content(); ?></span>
         </header>
     </div>
     

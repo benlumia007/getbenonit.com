@@ -1,4 +1,4 @@
-<?php $engine->include( 'partials/header/default' ); ?>
+<?php $engine->include( 'partials/header/single' ); ?>
 <section id="content" class="site-content">
     <div id="layout" class="right-sidebar">
         <main id="primary" class="content-area">

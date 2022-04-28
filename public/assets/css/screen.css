@@ -126,12 +126,12 @@ body {
 
 .home .cover {
   background: url("../../../../../public/images/custom-image.jpg");
-  padding: 4.4rem 0;
+  padding: 4.438rem;
 }
 .home .cover .entry-header {
   color: #ffffff;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 800px;
   text-align: center;
 }
 .home .cover .entry-header .entry-title {
@@ -143,9 +143,32 @@ body {
   line-height: 1.8rem;
 }
 
+.page .cover {
+  background: url("../../../../../public/images/custom-image.jpg");
+  padding: 8.125rem;
+}
+.page .cover .entry-header {
+  color: #ffffff;
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: center;
+}
+.page .cover .entry-header .entry-date {
+  font-family: var(--font-family-date, "Tangerine", cursive);
+  font-size: 2.125rem;
+}
+.page .cover .entry-header .entry-title {
+  font-size: 3.125rem;
+  margin: 0;
+  padding: 0;
+}
+.page .cover .entry-header .entry-description {
+  line-height: 1.8rem;
+}
+
 .single .cover {
   background: url("../../../../../public/images/custom-image.jpg");
-  padding: 8rem 0;
+  padding: 7rem;
 }
 .single .cover .entry-header {
   color: #ffffff;
@@ -191,7 +214,7 @@ body {
   font-size: 2.125rem;
 }
 .home .content-area .single .entry-header .entry-title {
-  margin: 0;
+  margin: 0.5rem 0 0 0;
   padding: 0;
 }
 

@@ -40,12 +40,3 @@ function primary_menu() { ?>
 </nav>
 <?php }
 
-function body_class() {
-    $path = Blush\App::resolve( 'router' )->path();
-
-    if ( $path == '/' ) :
-        return 'home';
-    else :
-        return 'single';
-    endif;
-}
