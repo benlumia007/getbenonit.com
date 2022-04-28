@@ -12,6 +12,20 @@ body {
   margin: 0;
 }
 
+u {
+  border-bottom: 0.125rem solid #000000;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 h1 {
   display: block;
   font-family: var(--font-family-heading, "Fira Sans", sans-serif);
@@ -117,7 +131,7 @@ body {
 .home .cover .entry-header {
   color: #ffffff;
   margin: 0 auto;
-  max-width: 640px;
+  max-width: 700px;
   text-align: center;
 }
 .home .cover .entry-header .entry-title {
@@ -136,7 +150,7 @@ body {
 .single .cover .entry-header {
   color: #ffffff;
   margin: 0 auto;
-  max-width: 640px;
+  max-width: 700px;
   text-align: center;
 }
 .single .cover .entry-header .entry-title {
@@ -176,6 +190,36 @@ body {
   padding: 0;
 }
 
+.single .content-area {
+  line-height: 1.8rem;
+}
+.single .content-area .single {
+  background: #ffffff;
+  border: 0.063rem solid #cccccc;
+  padding: 1.125rem;
+}
+.single .content-area .single .heading-permalink {
+  display: none;
+}
+.single .content-area .single .entry-header {
+  text-align: center;
+}
+.single .content-area .single .entry-header .entry-title {
+  margin: 0;
+  padding: 0;
+}
+.single .content-area .single ul p {
+  margin: 0;
+}
+.single .content-area .single .block-gallery-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+  grid-gap: 1.125rem;
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (min-width: 1025px) {
   .menu-primary {
     background: transparent;
@@ -210,6 +254,16 @@ body {
   padding: 1.125rem;
 }
 .home .widget-area .widget .widget-title {
+  margin: 0;
+  padding: 0;
+}
+
+.single .widget-area .widget {
+  background: #ffffff;
+  border: 0.063rem solid #cccccc;
+  padding: 1.125rem;
+}
+.single .widget-area .widget .widget-title {
   margin: 0;
   padding: 0;
 }

@@ -29,6 +29,6 @@ return [
 		'path'            => 'topics',
 		'taxonomy'        => true,
 		'term_collect'    => 'posts',
-		'term_collection' => [ 'order' => 'desc' ]
+		'term_collection' => [ 'order' => 'desc' ],
 	]
 ];

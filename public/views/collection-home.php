@@ -10,7 +10,7 @@
                 <ul>
                     <?php 
                         foreach ( $collection as $shit ) :
-                            $tags = $shit->terms( 'tag' );
+                            $tags = $shit->terms( 'tag' ) ?? '';
                         endforeach;
 
                         foreach ( $tags as $tag ) :

@@ -1,0 +1,39 @@
+.single {
+    .content-area {
+        line-height: 1.8rem;
+        
+        .single {
+            background: #ffffff;
+            border: 0.063rem solid #cccccc;
+            padding: 1.125rem;
+
+            .heading-permalink {
+                display: none;
+            }
+
+            .entry-header {
+                text-align: center;
+
+                .entry-title {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            ul {
+                p {
+                    margin: 0;
+                }
+            }
+
+            .block-gallery-items {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                list-style-type: none;
+                grid-gap: 1.125rem;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

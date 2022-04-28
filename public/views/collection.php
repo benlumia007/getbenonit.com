@@ -2,14 +2,16 @@
 <section id="content" class="site-content">
     <div id="layout" class="right-sidebar">
         <main id="primary" class="content-area">
-            <?php $engine->includeWhen( $single, 'content/single' ) ?>
+            <?php $engine->each( 'content/default', $collection, 'entry' ); ?>
         </main>
         <aside id="secondary" class="widget-area">
             <div class="widget widget-categories">
                 <h2 class="widget-title"><?= e( 'Categories' ); ?></h2>
                 <ul>
                     <?php 
-                            $tags = $single->terms( 'tag' ) ?? '';
+                        foreach ( $collection as $shit ) :
+                            $tags = $shit->terms( 'tag' ) ?? '';
+                        endforeach;
 
                         foreach ( $tags as $tag ) :
                             echo '<li><a href="' . $tag->uri() . '">' . $tag->title() . '</a></li>';
